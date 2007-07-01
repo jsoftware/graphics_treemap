@@ -6,11 +6,9 @@ DESCRIPTION=: 0 : 0
 Displays a treemap in an isigraph control.
 )
 
-VERSION=: '1.0.0'
+VERSION=: '1.0.1'
 
 RELEASE=: 'j601'
-
-PLATFORMS=: 'win'
 
 FILES=: 0 : 0
 treemap.ijs
