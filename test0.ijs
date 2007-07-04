@@ -4,5 +4,7 @@ dbg 1
 dbstops ''
 coreset ''
 wdpclose 'tmdemo'
-loadscript_jproject_ 'demo.ijs'
 
+NB. loadscript_jproject_ 'demo.ijs'
+loadtarget_jproject_ ''
+treemap 6 6 4 3 2 2 1

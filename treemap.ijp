@@ -15,6 +15,7 @@ PRIMARYFILES=: 0 : 0
 ~Addons/graphics/treemap/mouse
 ~Addons/graphics/treemap/pos
 ~Addons/graphics/treemap/show
+~Addons/graphics/treemap/tmap
 )
 
 PRIMARYLIBS=: 0 : 0
