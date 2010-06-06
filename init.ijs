@@ -1,5 +1,8 @@
 NB. init
 
+coclass 'ptreemap'
+NB. init
+
 coinsert 'jgl2'
 
 NB. =========================================================
