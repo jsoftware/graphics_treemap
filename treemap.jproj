@@ -1,15 +1,8 @@
 NB. project: ~Addons/graphics/treemap
 NB.
-NB. files should be given with their extension.
+NB. defines list of source files.
 NB. path defaults to project directory.
-NB.
-NB. Build     - build script
-NB. Run       - run script
-NB. Source    - source scripts
 
-Build=: 'build.ijs'
-Run=: 'run.ijs'
-Source=: 0 : 0
 init.ijs
 util.ijs
 color.ijs
@@ -23,4 +16,3 @@ mouse.ijs
 pos.ijs
 show.ijs
 tmap.ijs
-)
