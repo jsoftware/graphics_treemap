@@ -1,11 +1,10 @@
-NB. built from project: ~Addons/graphics/treemap/treemap
 NB. init
 
 script_z_ '~system\main\gl2.ijs'
 script_z_ '~system\main\pack.ijs'
 
 coclass 'ptreemap'
-
+NB. init
 
 coinsert 'jgl2'
 
@@ -60,7 +59,6 @@ NB. =========================================================
 initxywh=: 3 : 0
 'Sx Sy Sw Sh'=: Sxywh=: Rxywh + Roff * 1 1 _1 _1
 )
-
 NB. util
 
 EMPTY=: i.0 0
@@ -182,8 +180,6 @@ nms=. toupper each {."1 y
 (nms)=: {:"1 y
 nms
 )
-
-
 NB. color
 
 3 : 0 ''
@@ -220,8 +216,6 @@ YELLOW=: 255 255 0
 NB. =========================================================
 NB. standard colors
 STDCLR=: _3[\BLUE,RED,GREEN,PURPLE,FUCHSIA,OLIVE,TEAL,YELLOW,TAN,AQUA,BROWN,GRAY
-
-
 NB. defs
 
 Bxm=: 3
@@ -236,8 +230,6 @@ Roff=: 0
 BackColor=: COLOR_BTNFACE
 BoxColor=: DARKSLATEGRAY ,: 255 255 255
 EdgeColor=: DARKSLATEGRAY
-
-
 
 NB. opts
 
@@ -267,8 +259,6 @@ LOC
 NOTE
 PID
 )
-
-
 NB. draw
 
 NB. =========================================================
@@ -322,8 +312,6 @@ Txywh=: i.0 4
 Hdef=: ''
 Hndx=: _1
 )
-
-
 NB. events - set up form events
 NB.
 NB. initevents
@@ -397,7 +385,6 @@ a=. a,'if. 0 e. $r do. 1 else. {.,r end.'
 tmaphandler=: 3 : a
 EMPTY
 )
-
 NB. hover
 NB.
 NB. Hdef  - hover definition
@@ -447,8 +434,6 @@ pos=. (x,y) + Boxoff <. w,h
 Hdef=: drawbox pos ; txt
 )
 
-
-
 NB. misc
 
 NB. =========================================================
@@ -473,7 +458,6 @@ else.
   Note=: ''
 end.
 )
-
 NB. mouse
 
 NB. =========================================================
@@ -528,8 +512,6 @@ rclick=: 3 : 0
 'Mx My Index Ctrl Shift'=: y
 tmaphandler 'rclick'
 )
-
-
 NB. pos
 
 NB. =========================================================
@@ -586,8 +568,6 @@ end.
 EMPTY
 )
 
-
-
 NB. show
 
 NB. =========================================================
@@ -605,8 +585,6 @@ drawmap''
 
 NB. =========================================================
 refresh=: showit
-
-
 NB. tmap
 NB.
 NB. defines treemap utility

@@ -1,5 +1,8 @@
 NB. init
 
+script_z_ '~system\main\gl2.ijs'
+script_z_ '~system\main\pack.ijs'
+
 coclass 'ptreemap'
 NB. init
 
