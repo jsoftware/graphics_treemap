@@ -1,7 +1,16 @@
 NB. init
 
+require 'gtkwd'
+
+3 : 0''
+if. IFJ6 do.
 script_z_ '~system\main\gl2.ijs'
 script_z_ '~system\main\pack.ijs'
+else.
+require 'pack'
+end.
+''
+)
 
 coclass 'ptreemap'
 NB. init

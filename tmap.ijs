@@ -4,6 +4,8 @@ NB. defines treemap utility
 NB.
 NB. for nonce, only monadic use
 
+require 'gtkwd'
+
 TMAP=: 0 : 0
 pc tmap;pn "Treemap";
 xywh 0 0 300 200;cc tm isigraph ws_border rightmove bottommove;
@@ -42,7 +44,7 @@ DATA=: y
 LABEL=: NOTE=: 8!:0 DATA
 wd TMAP
 destroy=: tmapdestroy
+wd 'pshow;'
 tm=: '' conew 'ptreemap'
 show__tm pack 'DATA LABEL NOTE'
-wd 'pshow;'
 )

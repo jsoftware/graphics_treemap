@@ -1,5 +1,7 @@
 NB. demo
 
+require 'gtkwd'
+
 load 'graphics/treemap'
 coclass 'pdemo'
 
@@ -69,9 +71,9 @@ NB. =========================================================
 demo_run=: 3 : 0
 wd DEMO
 wd 'set b10 1'
+wd 'pshow'
 tm=: '' conew 'ptreemap'
 makedata''
-wd 'pshow'
 )
 
 NB. =========================================================
