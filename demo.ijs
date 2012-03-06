@@ -71,9 +71,10 @@ NB. =========================================================
 demo_run=: 3 : 0
 wd DEMO
 wd 'set b10 1'
-wd 'pshow'
+wd^:(-.IFJ6) 'pshow;pshow sw_hide'
 tm=: '' conew 'ptreemap'
 makedata''
+wd' pshow;'
 )
 
 NB. =========================================================
