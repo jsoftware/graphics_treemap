@@ -48,5 +48,5 @@ wd^:(-.IFJ6) 'pshow;pshow sw_hide'
 tm=: '' conew 'ptreemap'
 show__tm pack 'DATA LABEL NOTE'
 wd 'pshow;'
-wdloop^:(-.IFJ6)''
+evtloop^:(-.IFJ6)''
 )
