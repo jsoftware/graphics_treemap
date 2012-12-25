@@ -4,7 +4,7 @@ NB. color
 if. IFJAVA do.
   COLOR_BTNFACE=: 236 233 216
 else.
-  COLOR_BTNFACE=: 0 ". wd 'qcolor 15'
+  COLOR_BTNFACE=: wdqcolor 15
 end.
 )
 

@@ -195,7 +195,7 @@ NB. color
 if. IFJAVA do.
   COLOR_BTNFACE=: 236 233 216
 else.
-  COLOR_BTNFACE=: 0 ". wd 'qcolor 15'
+  COLOR_BTNFACE=: wdqcolor 15
 end.
 )
 
@@ -345,7 +345,7 @@ NB. =========================================================
 initevents=: 3 : 0
 
 if. 0 = #PID do.
-  fms=. <;._2;._2 wd 'qpx'
+  fms=. <;._2;._2 wdqpx''
   act=. 0 ". &> 4 {"1 fms
   fms=. fms \: (act=0),.act
   ndx=. (2 {"1 fms) i. locP
@@ -363,8 +363,8 @@ NB. ---------------------------------------------------------
 if. 0=#LOC do. LOC=: ID end.
 
 NB. ---------------------------------------------------------
-if. 0=#Hwndc do.
-  Hwndc=: wd 'qhwndc ',ID
+if. 0=Hwndc do.
+  Hwndc=: wdqhwndc ID
 end.
 
 NB. ---------------------------------------------------------
