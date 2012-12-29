@@ -344,14 +344,6 @@ EVENTS=: ;: 'mbldown mbrdown mmove paint'
 NB. =========================================================
 initevents=: 3 : 0
 
-if. 0 = #PID do.
-  fms=. <;._2;._2 wdqpx''
-  act=. 0 ". &> 4 {"1 fms
-  fms=. fms \: (act=0),.act
-  ndx=. (2 {"1 fms) i. locP
-  PID=: 0 pick ndx { fms
-end.
-
 NB. ---------------------------------------------------------
 if. 3=nameclass__locP <ID,'_tmaphandler' do.
   makehandler ID,'_tmaphandler__locP'
@@ -365,6 +357,18 @@ if. 0=#LOC do. LOC=: ID end.
 NB. ---------------------------------------------------------
 if. 0=Hwndc do.
   Hwndc=: wdqhwndc ID
+end.
+
+if. 0 = #PID do.
+  if. IFQT do.
+    PID=: wdgetparentid Hwndc
+  else.
+    fms=. <;._2;._2 wdqpx''
+    act=. 0 ". &> 4 {"1 fms
+    fms=. fms \: (act=0),.act
+    ndx=. (2 {"1 fms) i. locP
+    PID=: 0 pick ndx { fms
+  end.
 end.
 
 NB. ---------------------------------------------------------

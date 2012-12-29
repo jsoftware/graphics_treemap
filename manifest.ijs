@@ -6,7 +6,7 @@ DESCRIPTION=: 0 : 0
 Displays a treemap in an isigraph control.
 )
 
-VERSION=: '1.0.6'
+VERSION=: '1.0.7'
 
 RELEASE=: 'j601 j602 j701'
 
