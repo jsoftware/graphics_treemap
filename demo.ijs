@@ -38,6 +38,27 @@ rem form end;
 )
 
 NB. =========================================================
+DEMOQT=: 0 : 0
+pc demo qtwd;pn "Treemap";
+bin h;
+xywh 0 0 300 200;cc tm isigraph ws_border rightmove bottommove;
+bin v;
+xywh 310 7 70 13;cc newrun button leftmove rightmove;cn "New Run";
+bin v;
+xywh 312 28 70 54;cc g0 groupbox leftmove rightmove;cn "Approx Count";
+xywh 318 40 59 12;cc b10 radiobutton leftmove rightmove;cn "10";
+xywh 318 53 59 12;cc b25 radiobutton leftmove rightmove group;cn "25";
+xywh 318 66 59 12;cc b100 radiobutton leftmove rightmove group;cn "100";
+bin zv;
+xywh 312 92 70 42;cc g1 groupbox leftmove rightmove;cn "Color Style";
+xywh 318 104 59 12;cc bgroup radiobutton leftmove rightmove;cn "By Group";
+xywh 318 116 59 12;cc bsign radiobutton leftmove rightmove group;cn "By Sign";
+bin zszz;
+pas 4 0;pcenter;
+rem form end;
+)
+
+NB. =========================================================
 demo_b10_button=: 3 : 0
 COUNT=: 10
 makedata''
@@ -69,7 +90,7 @@ makedata''
 
 NB. =========================================================
 demo_run=: 3 : 0
-wd DEMO
+wd IFQT{::DEMO;DEMOQT
 wd 'set b10 1'
 wd^:(-.IFJ6) 'pshow;pshow sw_hide'
 tm=: '' conew 'ptreemap'
