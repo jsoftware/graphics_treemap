@@ -44,9 +44,9 @@ DATA=: y
 LABEL=: NOTE=: 8!:0 DATA
 wd TMAP
 destroy=: tmapdestroy
-wd^:(-.IFJ6) 'pshow;pshow sw_hide'
+wd 'pshow;pshow sw_hide'
 tm=: '' conew 'ptreemap'
 show__tm pack 'DATA LABEL NOTE'
 wd 'pshow;'
-evtloop^:(-.IFJ6)''
+evtloop''
 )

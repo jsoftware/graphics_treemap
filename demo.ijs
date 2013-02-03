@@ -92,7 +92,7 @@ NB. =========================================================
 demo_run=: 3 : 0
 wd IFQT{::DEMO;DEMOQT
 wd 'set b10 1'
-wd^:(-.IFJ6) 'pshow;pshow sw_hide'
+wd 'pshow;pshow sw_hide'
 tm=: '' conew 'ptreemap'
 makedata''
 wd' pshow;'
