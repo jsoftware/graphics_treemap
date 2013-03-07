@@ -8,7 +8,7 @@ Displays a treemap in an isigraph control.
 
 VERSION=: '1.0.9'
 
-RELEASE=: 'j601 j602 j701 j801'
+RELEASE=: 'j601 j602 j701'
 
 FILES=: 0 : 0
 treemap.ijs
