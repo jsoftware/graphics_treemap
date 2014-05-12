@@ -14,4 +14,3 @@ FILES=: 0 : 0
 treemap.ijs
 demo.ijs
 )
-PLATFORMS=: 'linux win darwin android'
