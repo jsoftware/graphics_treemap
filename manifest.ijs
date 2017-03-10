@@ -6,9 +6,9 @@ DESCRIPTION=: 0 : 0
 Displays a treemap in an isigraph control.
 )
 
-VERSION=: '1.0.14'
+VERSION=: '1.0.15'
 
-RELEASE=: 'j802 j803 j804 j805'
+RELEASE=: 'j802 j803 j804 j805 j806'
 
 FILES=: 0 : 0
 treemap.ijs
